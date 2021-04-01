@@ -7,21 +7,19 @@ package za.ac.cput.assignment1_adp;
 
 /**
  *
- * @author Chante Lee Davids
- * @studentNumber 220246688
+ * @author Delron Chad Claassen
+ * @studentNumber 219360561
  */
-public class Triangle {
-    /*
-    Triangle Types
-    Equilateral triangle (3,3,3)
-    Isosceles triangle (5,4,4)/(4,5,5)
-    Scalene triangle (3,4,5)/(5,4,3)
-    */
-    public String geType(int a, int b, int c){
-		if(a==b && a==c)
-		return"Equilateral";
+public class IdNumber {
+	
+	public boolean isIdNumber(String string) {
+		// TODO Auto-generated method stub
+		String digits = string;
 		
-		else if (a!=b && b!=c && a!=c)return "Scalene";
-		else return "Isosceles";
-    }
+		if(((digits.length() > 0) && (digits.length() < 14)) && digits.contains("[a-zA-Z]+") == false) {
+			return true;
+		}else
+			return false;
+	}
+	
 }
